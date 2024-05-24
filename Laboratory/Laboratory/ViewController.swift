@@ -27,7 +27,7 @@ final class ViewController: UIViewController {
         let tableView = UITableView(frame: .zero, style: .plain)
         return tableView
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -56,5 +56,12 @@ private extension ViewController {
             cell.textLabel?.text = element.name
         }
         .disposed(by: disposeBag)
+        
+        tableView.rx.itemSelected
+            .withUnretained(self)
+            .subscribe { (owner, index) in
+                owner.navigationController?.pushViewController(owner.controllers.value[index.row].vc, animated: true)
+            }
+            .disposed(by: disposeBag)
     }
 }
