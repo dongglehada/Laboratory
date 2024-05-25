@@ -12,6 +12,8 @@ final class NetworkLayerVC: UIViewController {
     
     let button = UIButton()
     
+    let provider = ProviderImpl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -40,12 +42,9 @@ private extension NetworkLayerVC {
     
     func fetchMovieList() {
         let requestDTO = MovieListRequestDTO(query: "완득", language: "ko", year: "", api_key: Constants.accessKey)
-//        let requestDTO = MovieListRequestDTO(query: "완득", language: "ko", page: 0, year: "", api_key: Constants.accessKey)
         let endpoint = APIEndpoints.fetchSearchMovieList(with: requestDTO)
-        let provider = ProviderImpl()
-        print("request start")
+
         provider.request(with: endpoint) { result in
-            print("request end")
             switch result {
             case .success(let response):
                 print(response.results)
