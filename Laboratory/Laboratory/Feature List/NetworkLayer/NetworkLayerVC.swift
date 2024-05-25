@@ -48,7 +48,7 @@ private extension NetworkLayerVC {
             print("request end")
             switch result {
             case .success(let response):
-                print(response)
+                print(response.results)
             case .failure(let error):
                 print(error.localizedDescription)
             }
