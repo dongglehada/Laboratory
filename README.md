@@ -1,3 +1,3 @@
 # Laboratory
-## Feature list
+## List
 1. UIPasteboard
