@@ -18,7 +18,8 @@ final class ViewController: UIViewController {
     }
     
     private let controllers: BehaviorRelay<[VCData]> = .init(value: [
-        .init(name: "PasteboardTest", vc: PasteboardVC())
+        .init(name: "PasteboardTest", vc: PasteboardVC()),
+        .init(name: "NetworkLayerTest", vc: NetworkLayerVC())
     ])
     
     private let disposeBag = DisposeBag()

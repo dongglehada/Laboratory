@@ -18,6 +18,15 @@
 		088FD9982C00BA320035ABB3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 088FD9972C00BA320035ABB3 /* RxCocoa */; };
 		088FD99C2C00BA320035ABB3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 088FD99B2C00BA320035ABB3 /* RxRelay */; };
 		088FD9A02C00BA320035ABB3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 088FD99F2C00BA320035ABB3 /* RxSwift */; };
+		088FD9AA2C021EE60035ABB3 /* NetworkLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9A92C021EE60035ABB3 /* NetworkLayerVC.swift */; };
+		088FD9AE2C0223C50035ABB3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9AD2C0223C50035ABB3 /* Endpoint.swift */; };
+		088FD9B02C0223EF0035ABB3 /* Responsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9AF2C0223EF0035ABB3 /* Responsable.swift */; };
+		088FD9B22C0223FE0035ABB3 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9B12C0223FE0035ABB3 /* Requestable.swift */; };
+		088FD9B52C0224200035ABB3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9B42C0224200035ABB3 /* NetworkError.swift */; };
+		088FD9B82C02244D0035ABB3 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9B72C02244D0035ABB3 /* Provider.swift */; };
+		088FD9BA2C0225AB0035ABB3 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9B92C0225AB0035ABB3 /* APIEndpoints.swift */; };
+		088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9BB2C0226440035ABB3 /* MovieListResponseDTO.swift */; };
+		088FD9BE2C0226850035ABB3 /* MovieListRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +38,15 @@
 		088FD9372C00AC750035ABB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		088FD9392C00AC750035ABB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		088FD94E2C00B0880035ABB3 /* PasteboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardVC.swift; sourceTree = "<group>"; };
+		088FD9A92C021EE60035ABB3 /* NetworkLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerVC.swift; sourceTree = "<group>"; };
+		088FD9AD2C0223C50035ABB3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		088FD9AF2C0223EF0035ABB3 /* Responsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responsable.swift; sourceTree = "<group>"; };
+		088FD9B12C0223FE0035ABB3 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		088FD9B42C0224200035ABB3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		088FD9B72C02244D0035ABB3 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		088FD9B92C0225AB0035ABB3 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		088FD9BB2C0226440035ABB3 /* MovieListResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponseDTO.swift; sourceTree = "<group>"; };
+		088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRequestDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				088FD9A72C021CA40035ABB3 /* UIPasteboard */,
+				088FD9A82C021EC20035ABB3 /* NetworkLayer */,
 			);
 			path = "Feature List";
 			sourceTree = "<group>";
@@ -99,6 +118,54 @@
 				088FD94E2C00B0880035ABB3 /* PasteboardVC.swift */,
 			);
 			path = UIPasteboard;
+			sourceTree = "<group>";
+		};
+		088FD9A82C021EC20035ABB3 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9A92C021EE60035ABB3 /* NetworkLayerVC.swift */,
+				088FD9AB2C0220000035ABB3 /* Network */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		088FD9AB2C0220000035ABB3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9B62C0224390035ABB3 /* Provider */,
+				088FD9B32C02240F0035ABB3 /* Common */,
+				088FD9AC2C0223B20035ABB3 /* Endpoint */,
+				088FD9B92C0225AB0035ABB3 /* APIEndpoints.swift */,
+				088FD9BB2C0226440035ABB3 /* MovieListResponseDTO.swift */,
+				088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		088FD9AC2C0223B20035ABB3 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9AD2C0223C50035ABB3 /* Endpoint.swift */,
+				088FD9AF2C0223EF0035ABB3 /* Responsable.swift */,
+				088FD9B12C0223FE0035ABB3 /* Requestable.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		088FD9B32C02240F0035ABB3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9B42C0224200035ABB3 /* NetworkError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		088FD9B62C0224390035ABB3 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9B72C02244D0035ABB3 /* Provider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +249,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088FD9B02C0223EF0035ABB3 /* Responsable.swift in Sources */,
+				088FD9B22C0223FE0035ABB3 /* Requestable.swift in Sources */,
+				088FD9AA2C021EE60035ABB3 /* NetworkLayerVC.swift in Sources */,
+				088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */,
+				088FD9BA2C0225AB0035ABB3 /* APIEndpoints.swift in Sources */,
 				088FD9302C00AC740035ABB3 /* ViewController.swift in Sources */,
 				088FD92C2C00AC740035ABB3 /* AppDelegate.swift in Sources */,
+				088FD9BE2C0226850035ABB3 /* MovieListRequestDTO.swift in Sources */,
 				088FD92E2C00AC740035ABB3 /* SceneDelegate.swift in Sources */,
+				088FD9B52C0224200035ABB3 /* NetworkError.swift in Sources */,
+				088FD9AE2C0223C50035ABB3 /* Endpoint.swift in Sources */,
+				088FD9B82C02244D0035ABB3 /* Provider.swift in Sources */,
 				088FD94F2C00B0880035ABB3 /* PasteboardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
