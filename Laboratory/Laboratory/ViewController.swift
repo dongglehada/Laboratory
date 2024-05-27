@@ -9,6 +9,7 @@ import UIKit
 import RxCocoa
 import SnapKit
 import RxSwift
+import SwiftUI
 
 final class ViewController: UIViewController {
     
@@ -19,7 +20,8 @@ final class ViewController: UIViewController {
     
     private let controllers: BehaviorRelay<[VCData]> = .init(value: [
         .init(name: "PasteboardTest", vc: PasteboardVC()),
-        .init(name: "NetworkLayerTest", vc: NetworkLayerVC())
+        .init(name: "NetworkLayerTest", vc: NetworkLayerVC()),
+        .init(name: "SwiftUITest", vc: UIHostingController(rootView: SwiftUIFirstView()))
     ])
     
     private let disposeBag = DisposeBag()

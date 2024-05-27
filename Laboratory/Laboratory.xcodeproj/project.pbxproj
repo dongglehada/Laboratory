@@ -27,6 +27,7 @@
 		088FD9BA2C0225AB0035ABB3 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9B92C0225AB0035ABB3 /* APIEndpoints.swift */; };
 		088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9BB2C0226440035ABB3 /* MovieListResponseDTO.swift */; };
 		088FD9BE2C0226850035ABB3 /* MovieListRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */; };
+		088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		088FD9B92C0225AB0035ABB3 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		088FD9BB2C0226440035ABB3 /* MovieListResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponseDTO.swift; sourceTree = "<group>"; };
 		088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRequestDTO.swift; sourceTree = "<group>"; };
+		088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		088FD94D2C00B06F0035ABB3 /* Feature List */ = {
 			isa = PBXGroup;
 			children = (
+				088FD9BF2C045ACA0035ABB3 /* SwiftUI */,
 				088FD9A72C021CA40035ABB3 /* UIPasteboard */,
 				088FD9A82C021EC20035ABB3 /* NetworkLayer */,
 			);
@@ -166,6 +169,14 @@
 				088FD9B72C02244D0035ABB3 /* Provider.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		088FD9BF2C045ACA0035ABB3 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				088FD9B02C0223EF0035ABB3 /* Responsable.swift in Sources */,
+				088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */,
 				088FD9B22C0223FE0035ABB3 /* Requestable.swift in Sources */,
 				088FD9AA2C021EE60035ABB3 /* NetworkLayerVC.swift in Sources */,
 				088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */,
