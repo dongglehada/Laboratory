@@ -101,9 +101,9 @@
 		088FD94D2C00B06F0035ABB3 /* Feature List */ = {
 			isa = PBXGroup;
 			children = (
-				088FD9BF2C045ACA0035ABB3 /* SwiftUI */,
 				088FD9A72C021CA40035ABB3 /* UIPasteboard */,
 				088FD9A82C021EC20035ABB3 /* NetworkLayer */,
+				088FD9BF2C045ACA0035ABB3 /* SwiftUI */,
 			);
 			path = "Feature List";
 			sourceTree = "<group>";
