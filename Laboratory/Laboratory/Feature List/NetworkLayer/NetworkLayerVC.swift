@@ -7,12 +7,15 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 final class NetworkLayerVC: UIViewController {
     
     let button = UIButton()
     
     let provider = ProviderImpl()
+    
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,15 +46,14 @@ private extension NetworkLayerVC {
     func fetchMovieList() {
         let requestDTO = MovieListRequestDTO(query: "완득", language: "ko", year: "", api_key: Constants.accessKey)
         let endpoint = APIEndpoints.fetchSearchMovieList(with: requestDTO)
-
-        provider.request(with: endpoint) { result in
-            switch result {
-            case .success(let response):
-                print(response.results)
-            case .failure(let error):
-                print(error.localizedDescription)
+        
+        provider.request(with: endpoint)
+            .subscribe { response in
+                print(response)
+            } onError: { error in
+                print(error)
             }
-        }
+            .disposed(by: disposeBag)
     }
     
 }
