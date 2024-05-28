@@ -20,6 +20,8 @@ struct SwiftUIFirstView: View {
         }
     }
     
+    @State private var modelData = ModelData()
+    
     var views: [SwiftUIViewData] = [
         .init(name: "SwiftUITutorialsView", view: SwiftUITutorialsView())
     ]
@@ -28,7 +30,7 @@ struct SwiftUIFirstView: View {
         NavigationView {
             List {
                 ForEach(views) { data in
-                    NavigationLink(destination: data.view) {
+                    NavigationLink(destination: data.view.environment(modelData)) {
                         Text(data.name)
                     }
                 }
