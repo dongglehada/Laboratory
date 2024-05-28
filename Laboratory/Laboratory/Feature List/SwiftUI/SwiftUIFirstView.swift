@@ -9,31 +9,26 @@ import SwiftUI
 
 struct SwiftUIFirstView: View {
     
-    struct SwiftUIViewData<Content: View>: Identifiable {
+    struct SwiftUIViewData: Identifiable {
         var id = UUID()
         var name: String
-        var view: () -> Content
+        var view: AnyView
         
-        init(name: String, view: @escaping () -> Content) {
+        init<Content: View>(name: String, view: Content) {
             self.name = name
-            self.view = view
+            self.view = AnyView(view)
         }
     }
     
-    var views: [SwiftUIViewData<AnyView>] = [
-        SwiftUIViewData(name: "View 1") {
-            AnyView(Text("View 1").font(.title))
-        },
-        SwiftUIViewData(name: "View 2") {
-            AnyView(Text("View 2").font(.title))
-        }
+    var views: [SwiftUIViewData] = [
+        .init(name: "SwiftUITutorialsView", view: SwiftUITutorialsView())
     ]
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(views) { data in
-                    NavigationLink(destination: data.view()) {
+                    NavigationLink(destination: data.view) {
                         Text(data.name)
                     }
                 }

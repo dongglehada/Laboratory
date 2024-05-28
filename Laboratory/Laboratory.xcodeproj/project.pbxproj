@@ -28,6 +28,7 @@
 		088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9BB2C0226440035ABB3 /* MovieListResponseDTO.swift */; };
 		088FD9BE2C0226850035ABB3 /* MovieListRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */; };
 		088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */; };
+		088FD9C42C05F9080035ABB3 /* SwiftUITutorialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		088FD9BB2C0226440035ABB3 /* MovieListResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponseDTO.swift; sourceTree = "<group>"; };
 		088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRequestDTO.swift; sourceTree = "<group>"; };
 		088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirstView.swift; sourceTree = "<group>"; };
+		088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +177,17 @@
 			isa = PBXGroup;
 			children = (
 				088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */,
+				088FD9C22C05F8EF0035ABB3 /* Views */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		088FD9C22C05F8EF0035ABB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 				088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */,
 				088FD9B22C0223FE0035ABB3 /* Requestable.swift in Sources */,
 				088FD9AA2C021EE60035ABB3 /* NetworkLayerVC.swift in Sources */,
+				088FD9C42C05F9080035ABB3 /* SwiftUITutorialsView.swift in Sources */,
 				088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */,
 				088FD9BA2C0225AB0035ABB3 /* APIEndpoints.swift in Sources */,
 				088FD9302C00AC740035ABB3 /* ViewController.swift in Sources */,
