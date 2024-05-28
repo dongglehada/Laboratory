@@ -30,6 +30,7 @@
 		088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */; };
 		088FD9C42C05F9080035ABB3 /* SwiftUITutorialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */; };
 		088FD9C72C05FF9C0035ABB3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C62C05FF9C0035ABB3 /* CircleImage.swift */; };
+		088FD9C92C0601210035ABB3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C82C0601210035ABB3 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirstView.swift; sourceTree = "<group>"; };
 		088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsView.swift; sourceTree = "<group>"; };
 		088FD9C62C05FF9C0035ABB3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		088FD9C82C0601210035ABB3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */,
 				088FD9C62C05FF9C0035ABB3 /* CircleImage.swift */,
+				088FD9C82C0601210035ABB3 /* MapView.swift */,
 			);
 			path = SwiftUITutorials;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */,
 				088FD9BA2C0225AB0035ABB3 /* APIEndpoints.swift in Sources */,
 				088FD9302C00AC740035ABB3 /* ViewController.swift in Sources */,
+				088FD9C92C0601210035ABB3 /* MapView.swift in Sources */,
 				088FD92C2C00AC740035ABB3 /* AppDelegate.swift in Sources */,
 				088FD9BE2C0226850035ABB3 /* MovieListRequestDTO.swift in Sources */,
 				088FD92E2C00AC740035ABB3 /* SceneDelegate.swift in Sources */,
