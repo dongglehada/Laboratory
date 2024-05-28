@@ -9,9 +9,19 @@ import SwiftUI
 
 struct SwiftUITutorialsView: View {
     var body: some View {
-        Text("Turtle Rock")
-            .font(.title)
+        VStack(alignment: .leading) {
+            Text("Turtle Rock")
+                .font(.title)
             .foregroundColor(Color.green)
+            HStack {
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+                Spacer()
+                Text("California")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
             
             
     }
