@@ -29,6 +29,7 @@
 		088FD9BE2C0226850035ABB3 /* MovieListRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */; };
 		088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */; };
 		088FD9C42C05F9080035ABB3 /* SwiftUITutorialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */; };
+		088FD9C72C05FF9C0035ABB3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD9C62C05FF9C0035ABB3 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		088FD9BD2C0226850035ABB3 /* MovieListRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRequestDTO.swift; sourceTree = "<group>"; };
 		088FD9C02C045B2A0035ABB3 /* SwiftUIFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirstView.swift; sourceTree = "<group>"; };
 		088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsView.swift; sourceTree = "<group>"; };
+		088FD9C62C05FF9C0035ABB3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,9 +187,18 @@
 		088FD9C22C05F8EF0035ABB3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */,
+				088FD9C52C05FF5C0035ABB3 /* SwiftUITutorials */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		088FD9C52C05FF5C0035ABB3 /* SwiftUITutorials */ = {
+			isa = PBXGroup;
+			children = (
+				088FD9C32C05F9080035ABB3 /* SwiftUITutorialsView.swift */,
+				088FD9C62C05FF9C0035ABB3 /* CircleImage.swift */,
+			);
+			path = SwiftUITutorials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				088FD9B02C0223EF0035ABB3 /* Responsable.swift in Sources */,
+				088FD9C72C05FF9C0035ABB3 /* CircleImage.swift in Sources */,
 				088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */,
 				088FD9B22C0223FE0035ABB3 /* Requestable.swift in Sources */,
 				088FD9AA2C021EE60035ABB3 /* NetworkLayerVC.swift in Sources */,
