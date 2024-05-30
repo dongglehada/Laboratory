@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		087345FE2C0624A300534FFA /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087345FD2C0624A300534FFA /* FavoriteButton.swift */; };
+		087346032C0869AF00534FFA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087346022C0869AF00534FFA /* Coordinator.swift */; };
 		088FD92C2C00AC740035ABB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD92B2C00AC740035ABB3 /* AppDelegate.swift */; };
 		088FD92E2C00AC740035ABB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD92D2C00AC740035ABB3 /* SceneDelegate.swift */; };
 		088FD9302C00AC740035ABB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD92F2C00AC740035ABB3 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		087345FD2C0624A300534FFA /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		087346022C0869AF00534FFA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		088FD9282C00AC740035ABB3 /* Laboratory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laboratory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088FD92B2C00AC740035ABB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		088FD92D2C00AC740035ABB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		087346012C08699200534FFA /* MVVM-C */ = {
+			isa = PBXGroup;
+			children = (
+				087346022C0869AF00534FFA /* Coordinator.swift */,
+			);
+			path = "MVVM-C";
+			sourceTree = "<group>";
+		};
 		088FD91F2C00AC740035ABB3 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 				088FD9A72C021CA40035ABB3 /* UIPasteboard */,
 				088FD9A82C021EC20035ABB3 /* NetworkLayer */,
 				088FD9BF2C045ACA0035ABB3 /* SwiftUI */,
+				087346012C08699200534FFA /* MVVM-C */,
 			);
 			path = "Feature List";
 			sourceTree = "<group>";
@@ -347,6 +358,7 @@
 				088FD9AA2C021EE60035ABB3 /* NetworkLayerVC.swift in Sources */,
 				088FD9CD2C0610C90035ABB3 /* Landmark.swift in Sources */,
 				088FD9C42C05F9080035ABB3 /* SwiftUITutorialsView.swift in Sources */,
+				087346032C0869AF00534FFA /* Coordinator.swift in Sources */,
 				088FD9BC2C0226440035ABB3 /* MovieListResponseDTO.swift in Sources */,
 				088FD9BA2C0225AB0035ABB3 /* APIEndpoints.swift in Sources */,
 				0894D0F02C06158200DADD20 /* LandmarkDetail.swift in Sources */,
