@@ -10,7 +10,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var coordinator: CoordinatorTestCoordinator?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,10 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.backgroundColor = .systemBackground
 //        let rootVC = ViewController()
 //        window?.rootViewController = UINavigationController(rootViewController: rootVC)
+        
         let navigationController = UINavigationController()
-        coordinator = CoordinatorTestCoordinator(navigationController: navigationController)
-        coordinator?.start()
         window?.rootViewController = navigationController
+        
+        let coordinator = AppCoordinator(navigationController: navigationController)
+        coordinator.start()
         
         window?.makeKeyAndVisible()
     }

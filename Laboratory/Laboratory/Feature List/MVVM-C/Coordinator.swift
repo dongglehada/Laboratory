@@ -8,74 +8,63 @@
 import Foundation
 import UIKit
 
-struct CoordinatorTestModel {
-    let username: String
-    let password: String
-}
-
 protocol Coordinator: AnyObject {
-    var navigationController: UINavigationController { get set }
+    var parentCoordinator: Coordinator? { get set }
     var childCoordinators: [Coordinator] { get set }
+    var navigationController: UINavigationController { get set }
     func start()
 }
 
-final class CoordinatorLoginSuccessVC: UIViewController {
-    
-    var viewModel: CoordinatorLoginSuccessViewModel
-    
-    init(viewModel: CoordinatorLoginSuccessViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .green
+extension Coordinator {
+    /// Removing a coordinator inside a children. This call is important to prevent memory leak.
+    /// - Parameter coordinator: Coordinator that finished.
+    func childDidFinish(_ coordinator : Coordinator){
+        // Call this if a coordinator is done.
+        for (index, child) in childCoordinators.enumerated() {
+            if child === coordinator {
+                childCoordinators.remove(at: index)
+                break
+            }
+        }
     }
 }
 
-protocol CoordinatorLoginSuccessViewModelDelegate: AnyObject {
-    func showVC()
-}
-
-final class CoordinatorLoginSuccessViewModel {
-    weak var delegate: CoordinatorLoginSuccessViewModelDelegate?
+class AppCoordinator: Coordinator {
+    var parentCoordinator: Coordinator?
     
-    func showVC() {
-        delegate?.showVC()
-    }
-}
-
-final class CoordinatorLoginFailVC: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
-    }
-}
-
-final class CoordinatorTestCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     var childCoordinators: [Coordinator] = []
+    
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let viewModel = CoordinatorLoginSuccessViewModel()
-        let loginVC = CoordinatorLoginSuccessVC(viewModel: viewModel)
-        viewModel.delegate = self
+        print(self, "start")
+        var isA = false
+        
+        if isA {
+            startAViewController()
+        } else {
+            startBViewController()
+        }
     }
-}
-
-extension CoordinatorTestCoordinator: CoordinatorLoginSuccessViewModelDelegate {
-    func showVC() {
-        let coordinator = 
+    
+    func startAViewController() {
+        let coordinator = AViewCoordinator(navigationController: navigationController)
+        childCoordinators.removeAll()
+        coordinator.parentCoordinator = self
+        childCoordinators.append(coordinator)
+        coordinator.start()
+    }
+    
+    func startBViewController() {
+        let coordinator = BViewCoordinator(navigationController: navigationController)
+        childCoordinators.removeAll()
+        coordinator.parentCoordinator = self
+        childCoordinators.append(coordinator)
+        coordinator.start()
     }
 }
