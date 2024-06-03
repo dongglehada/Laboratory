@@ -7,6 +7,13 @@
 
 import UIKit
 
+import KakaoSDKCommon
+import RxKakaoSDKCommon
+import KakaoSDKAuth
+import RxKakaoSDKAuth
+import KakaoSDKUser
+import RxKakaoSDKUser
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

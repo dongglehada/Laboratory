@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  Laboratory
+//
+//  Created by SeoJunYoung on 6/3/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+KAKAO_NATIVE_APP_KEY = 69f4c69bb331debd96469c66109adfa2
