@@ -16,6 +16,7 @@
 		0851056B2C0D9F1800ED7DBB /* RxKakaoSDKCert in Frameworks */ = {isa = PBXBuildFile; productRef = 0851056A2C0D9F1800ED7DBB /* RxKakaoSDKCert */; };
 		0851056D2C0D9F1800ED7DBB /* RxKakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 0851056C2C0D9F1800ED7DBB /* RxKakaoSDKCommon */; };
 		0851056F2C0D9F1800ED7DBB /* RxKakaoSDKFriend in Frameworks */ = {isa = PBXBuildFile; productRef = 0851056E2C0D9F1800ED7DBB /* RxKakaoSDKFriend */; };
+		085105722C0DA40400ED7DBB /* KakaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085105712C0DA40400ED7DBB /* KakaoViewController.swift */; };
 		087345FE2C0624A300534FFA /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087345FD2C0624A300534FFA /* FavoriteButton.swift */; };
 		087346032C0869AF00534FFA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087346022C0869AF00534FFA /* Coordinator.swift */; };
 		088FD92C2C00AC740035ABB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FD92B2C00AC740035ABB3 /* AppDelegate.swift */; };
@@ -55,6 +56,7 @@
 		085105492C0C907B00ED7DBB /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 		0851054C2C0C90A400ED7DBB /* CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
 		0851054E2C0C90F600ED7DBB /* DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DViewController.swift; sourceTree = "<group>"; };
+		085105712C0DA40400ED7DBB /* KakaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoViewController.swift; sourceTree = "<group>"; };
 		087345FD2C0624A300534FFA /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		087346022C0869AF00534FFA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		088FD9282C00AC740035ABB3 /* Laboratory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laboratory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		085105702C0DA3E200ED7DBB /* Kakao */ = {
+			isa = PBXGroup;
+			children = (
+				085105712C0DA40400ED7DBB /* KakaoViewController.swift */,
+			);
+			path = Kakao;
+			sourceTree = "<group>";
+		};
 		087345FF2C0624D200534FFA /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,7 @@
 				088FD9A82C021EC20035ABB3 /* NetworkLayer */,
 				088FD9BF2C045ACA0035ABB3 /* SwiftUI */,
 				087346012C08699200534FFA /* MVVM-C */,
+				085105702C0DA3E200ED7DBB /* Kakao */,
 			);
 			path = "Feature List";
 			sourceTree = "<group>";
@@ -405,6 +416,7 @@
 				088FD9B82C02244D0035ABB3 /* Provider.swift in Sources */,
 				0894D0EC2C0613E000DADD20 /* LandmarkRow.swift in Sources */,
 				088FD94F2C00B0880035ABB3 /* PasteboardVC.swift in Sources */,
+				085105722C0DA40400ED7DBB /* KakaoViewController.swift in Sources */,
 				087345FE2C0624A300534FFA /* FavoriteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

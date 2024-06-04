@@ -22,6 +22,7 @@ final class ViewController: UIViewController {
         .init(name: "PasteboardTest", vc: PasteboardVC()),
         .init(name: "NetworkLayerTest", vc: NetworkLayerVC()),
         .init(name: "SwiftUITest", vc: UIHostingController(rootView: SwiftUIFirstView())),
+        .init(name: "Kakao Login", vc: KakaoViewController())
     ])
     
     private let disposeBag = DisposeBag()
@@ -55,6 +56,12 @@ private extension ViewController {
     }
     
     func setupBind() {
+        
+        tableView.rx.contentOffset.subscribe { point in
+            print(point.element?.y)
+        }
+        .disposed(by: disposeBag)
+        
         controllers.bind(to: tableView.rx.items(cellIdentifier: "Cell")) { (row, element, cell) in
             cell.textLabel?.text = element.name
         }
