@@ -22,7 +22,8 @@ final class ViewController: UIViewController {
         .init(name: "PasteboardTest", vc: PasteboardVC()),
         .init(name: "NetworkLayerTest", vc: NetworkLayerVC()),
         .init(name: "SwiftUITest", vc: UIHostingController(rootView: SwiftUIFirstView())),
-        .init(name: "Kakao Login", vc: KakaoViewController())
+        .init(name: "Kakao Login", vc: KakaoViewController()),
+        .init(name: "CustomPicker", vc: CustomPickerVC())
     ])
     
     private let disposeBag = DisposeBag()

@@ -49,6 +49,7 @@
 		0894D0EC2C0613E000DADD20 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0894D0EB2C0613E000DADD20 /* LandmarkRow.swift */; };
 		0894D0EE2C0614BC00DADD20 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0894D0ED2C0614BC00DADD20 /* LandmarkList.swift */; };
 		0894D0F02C06158200DADD20 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0894D0EF2C06158200DADD20 /* LandmarkDetail.swift */; };
+		08F49E122C26D7B7002D5202 /* CustomPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F49E112C26D7B7002D5202 /* CustomPickerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		0894D0EB2C0613E000DADD20 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		0894D0ED2C0614BC00DADD20 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		0894D0EF2C06158200DADD20 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		08F49E112C26D7B7002D5202 /* CustomPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		088FD94D2C00B06F0035ABB3 /* Feature List */ = {
 			isa = PBXGroup;
 			children = (
+				08F49E102C26D7A1002D5202 /* CustomPicker */,
 				088FD9A72C021CA40035ABB3 /* UIPasteboard */,
 				088FD9A82C021EC20035ABB3 /* NetworkLayer */,
 				088FD9BF2C045ACA0035ABB3 /* SwiftUI */,
@@ -301,6 +304,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		08F49E102C26D7A1002D5202 /* CustomPicker */ = {
+			isa = PBXGroup;
+			children = (
+				08F49E112C26D7B7002D5202 /* CustomPickerVC.swift */,
+			);
+			path = CustomPicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,6 +403,7 @@
 				088FD9B02C0223EF0035ABB3 /* Responsable.swift in Sources */,
 				0851054D2C0C90A400ED7DBB /* CViewController.swift in Sources */,
 				088FD9C72C05FF9C0035ABB3 /* CircleImage.swift in Sources */,
+				08F49E122C26D7B7002D5202 /* CustomPickerVC.swift in Sources */,
 				088FD9CF2C0611A00035ABB3 /* ModelData.swift in Sources */,
 				088FD9C12C045B2A0035ABB3 /* SwiftUIFirstView.swift in Sources */,
 				088FD9B22C0223FE0035ABB3 /* Requestable.swift in Sources */,
